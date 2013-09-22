@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+
+    <title>RRA {% block title %}{% endblock %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- inline css for maximum efficiency (jk) -->
+    <style>
+      .container {
+        margin-top: 25px;
+      }
+
+      .alert {
+        padding: 8px;
+        margin-bottom: 10px;
+      }
+
+      .max-width {
+        max-width: 400px;
+      }
+
+      /* copied from bootstrap's input-group-addon */
+      .captcha {
+        padding: 6px 12px;
+        background-color: #eee;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .input-group {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      {% block content %}
+
+      {% endblock %}
+    </div>
+  </body>
+</html>
+<!-- welp how do I html ;-; -->

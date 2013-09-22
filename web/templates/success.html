@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %} - Success{% endblock %}
+
+{% block content %}
+
+<div class="alert alert-success max-width">
+  <strong>Registration successful!</strong>
+</div>
+<div class="input-group max-width">
+  <span class="input-group-addon">Username</span>
+  <input type="text" class="form-control" value="{{ session.username }}"/>
+</div>
+
+<div class="input-group max-width">
+  <span class="input-group-addon">Password</span>
+  <input type="text" class="form-control" value="{{ session.passwd }}"/>
+</div>
+
+<a href="{{ url_for('index') }}">Back to home</a>
+
+{% endblock %}

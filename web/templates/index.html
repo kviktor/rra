@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>RRA = Random Reddit Account</h2>
+<p class="lead">
+  The username is generated from animal names, adjectives and city names
+  totalling around <strong>9,990,695</strong> possible different usernames.
+</p>
+<p>
+  Unfortunately the maximum username length is 20 characters so sometimes we can't 
+  use words from all 3 of those things (animal, adjective, city), in this case
+  a random number is inserted somewhere into the word.
+</p>
+<p>
+    Please note that the registration happens server-side, this essentially means that sometimes the app gets blocked from reddit for 5-10 minutes!
+</p>
+<p>
+  <a class="btn btn-success btn-lg" href="{{ url_for('register') }}">Register random account</a>
+
+  <a class="btn btn-info btn-lg" href="{{ url_for('register') }}?number">with number</a>
+</p>
+
+{% endblock %}
