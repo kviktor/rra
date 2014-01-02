@@ -5,7 +5,7 @@ from web.helpers import name_gen, password_gen, register_reddit, get_captcha
 
 if __name__ == "__main__":
     print ("\nHello, in order to register a random account please"
-           "solve this captcha\n")
+           " solve this captcha\n")
 
     iden = get_captcha()
     print "http://www.reddit.com/captcha/%s" % iden
