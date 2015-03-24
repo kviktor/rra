@@ -24,9 +24,6 @@ Just copy the link into your browser / download the captcha, solve it and you ar
 
 ```
 $ cd web/
-```
-
-```
 $ python server.py
 ```
 
